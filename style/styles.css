@@ -1,0 +1,258 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #000000;
+    color: #FFFFA1;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #000000;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    margin-right: 1rem;
+    width: 200px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 2px solid #FFFFA1;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #FFFFA1;
+}
+
+.burger-menu, .account-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #FC3A3A;
+    margin-left: 1rem;
+}
+
+/* Main content styles */
+main {
+    padding-top: 80px;
+}
+
+.hero-section {
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.navigation-bullets {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.bullet {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #FFFFA1;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.bullet.active {
+    background-color: #FC3A3A;
+}
+
+.game-logo {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.game-logo img {
+    max-width: 80%;
+    height: auto;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+}
+
+.nav-category {
+    padding: 1rem;
+}
+
+.nav-category h2 {
+    color: #FFFFA1;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #FFFFA1;
+}
+
+.nav-button img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+}
+
+.wiki-title {
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    color: var(--bg-color);
+    padding: 5px 10px;
+    font-weight: bold;
+    background-color: #FC3A3A;
+}
+
+.wiki-button {
+    width: 120px;
+    height: 150px;
+    background-color: var(--container-bg);
+    border: 2px solid;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.wiki-button:hover {
+    background-color: var(--neon-blue);
+    color: var(--bg-color);
+}
+.wiki-button-icon {
+    width: 60px;
+    height: 60px;
+    background-color: var(--text-color);
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.wiki-button-text {
+    text-align: center;
+    font-size: 0.5Rem;
+}
+
+.game-info, .nav-category {
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+.cage-container {
+    border: 2px solid #FC3A3A;
+    padding: 1rem;
+    position: relative;
+}
+
+.cage-container::before, .cage-container::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #FC3A3A;
+}
+
+.cage-container::before {
+    top: -10px;
+    left: -10px;
+    border-right: none;
+    border-bottom: none;
+}
+
+.cage-container::after {
+    bottom: -10px;
+    right: -10px;
+    border-left: none;
+    border-top: none;
+}
+
+/* Footer styles */
+footer {
+    background-color: #167A6C;
+    color: #000000;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links a {
+    color: #000000;
+    text-decoration: none;
+    margin-right: 1rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.footer-links img {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+}
+
+/* Typography */
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+
+p {
+    text-transform: none;
+}

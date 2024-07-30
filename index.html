@@ -1,153 +1,93 @@
-<!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lobotomy Corporation - Face the Fear, Build the Future</title>
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+<head>
+    <title>Lobotomy Corporation Game Hub</title>
+    <link rel="stylesheet" href="style/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <header>
-        <img src="logo.svg" alt="Lobotomy Corporation Logo" class="logo">
+        <img src="" alt="Lobotomy Corporation logo" class="logo">
         <div class="header-right">
             <div class="search-bar">
-                <input type="text" placeholder="Поиск...">
+                <input type="text" placeholder="Search...">
             </div>
-            <div class="user-icon"></div>
+            <div class="burger-menu">☰</div>
+            <div class="account-icon">👤</div>
         </div>
     </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Lobotomy Corporation</h1>
-            <p>Face the Fear, Build the Future</p>
-            <a href="#" class="cta-button">Начать игру</a>
-        </div>
-    </section>
+    <main>
+        <section class="hero-section">
+            <img src="" alt="Dystopian cityscape game screenshot" class="hero-image" id="heroImage">
+            <div class="navigation-bullets" id="navBullets"></div>
+        </section>
 
-    <section class="section">
-        <h2 class="section-title">Особенности игры</h2>
-        <div class="features">
-            <div class="feature">
-                <img src="feature1.svg" alt="Управление ресурсами">
-                <h3>Управление ресурсами</h3>
-                <p>Распределяйте сотрудников и энергию для эффективной работы корпорации.</p>
-            </div>
-            <div class="feature">
-                <img src="feature2.svg" alt="Аномальные существа">
-                <h3>Аномальные существа</h3>
-                <p>Изучайте и содержите загадочных монстров с уникальными способностями.</p>
-            </div>
-            <div class="feature">
-                <img src="feature3.svg" alt="Стратегические решения">
-                <h3>Стратегические решения</h3>
-                <p>Принимайте сложные решения, влияющие на судьбу вашей корпорации.</p>
-            </div>
-        </div>
-    </section>
+        <section class="game-logo">
+            <img src="" alt="Lobotomy Corporation extended logo">
+        </section>
 
-    <section class="section">
-        <h2 class="section-title">Энциклопедия Lobotomy Corporation</h2>
-        <div class="wiki-container" style="border-color: var(--neon-blue);">
-            <div class="wiki-title" style= "background-color: var(--neon-blue);">МЕХАНИКИ</div>
-            <div class="wiki-buttons">
-                <div class="wiki-button" style="border-color: var(--neon-blue);">
-                    <div class="wiki-button-icon"></div>
-                    <div class="wiki-button-text">Механика урона</div>
-                </div>
-                <div class="wiki-button" style="border-color: var(--neon-blue);">
-                    <div class="wiki-button-icon"></div>
-                    <div class="wiki-button-text">Эффекты</div>
-                </div>
-                <div class="wiki-button" style="border-color: var(--neon-blue);">
-                    <div class="wiki-button-icon"></div>
-                    <div class="wiki-button-text">Прокачка</div>
-                </div>
-                <div class="wiki-button" style="border-color: var(--neon-blue);">
-                    <div class="wiki-button-icon"></div>
-                    <div class="wiki-button-text">Уровни</div>
-                </div>
-                <div class="wiki-button" style="border-color: var(--neon-blue);">
-                    <div class="wiki-button-icon"></div>
-                    <div class="wiki-button-text">Статусы</div>
-                </div>
-            </div>
-        </div>
-        <div class="wiki-container" style="border-color: var(--neon-green);">
-            <div class="wiki-title" style= "background-color: var(--neon-green);">КАРТЫ</div> 
-            <div class="wiki-buttons">
-                <div class="wiki-button" style="border-color: var(--neon-green);">
-                    <div class="wiki-button-icon"></div>
-                    <div class="wiki-button-text">Этажи</div>
-                </div>
-                <div class="wiki-button" style="border-color: var(--neon-green);">
-                    <div class="wiki-button-icon"></div>
-                    <div class="wiki-button-text">Отделы</div>
-                </div>
-                <div class="wiki-button" style="border-color: var(--neon-green);">
-                    <div class="wiki-button-icon"></div>
-                    <div class="wiki-button-text">Особые зоны</div>
-                </div>
-                <div class="wiki-button" style="border-color: var(--neon-green);">
-                    <div class="wiki-button-icon"></div>
-                    <div class="wiki-button-text">Секреты</div>
-                </div>
-                <div class="wiki-button" style="border-color: var(--neon-green);">
-                    <div class="wiki-button-icon"></div>
-                    <div class="wiki-button-text">Статусы</div>
-                </div>
-            </div>
-        </div>
-        <div class="wiki-container" style="border-color: var(--neon-red);">
-            <div class="wiki-title" style= "background-color: var(--neon-red);">Аномалии</div>
-            <div class="wiki-buttons" style="border-color: var(--neon-red);">
-                <div class="wiki-button" style="border-color: var(--neon-red);">
-                    <div class="wiki-button-icon"></div>
-                    <div class="wiki-button-text">Классификация</div>
-                </div>
-                <div class="wiki-button" style="border-color: var(--neon-red);">
-                    <div class="wiki-button-icon"></div>
-                    <div class="wiki-button-text">Список аномалий</div>
-                </div>
-                <div class="wiki-button" style="border-color: var(--neon-red);">
-                    <div class="wiki-button-icon"></div>
-                    <div class="wiki-button-text">Особые условия</div>
-                </div>
-                <div class="wiki-button" style="border-color: var(--neon-red);">
-                    <div class="wiki-button-icon"></div>
-                    <div class="wiki-button-text">Взаимодействия</div>
-                </div>
-            </div>
-        </div>
-    </section>
-    </section>
+        <nav class="navigation">
+            <div class="nav-category cage-container">
+                <div class="wiki-title">MECHANICS</div> 
+                <div class="nav-buttons">
+                    <div class="wiki-button">
+                    <a href="game/mechanics/abnormalities" class="nav-button">
+                        <img src="" alt="Abnormalities mechanic">
+                        <span class="wiki-button-text">STATUS EFFECTS</span>
+                    </a>
+                    </div>
 
-    
+                    <div class="wiki-button">
+                    <a href="game/mechanics/energy" class="nav-button">
+                        <img src="" alt="Energy management">
+                        <span class="wiki-button-text">EMOTION LEVEL</span>
+                    </a>
+                    </div>  
+                </div>
+            </div>
+            <div class="nav-category cage-container">
+                <div class="wiki-title">MAPS</div> 
+                <div class="nav-buttons">
+                    <div class="wiki-button">
+                    <a href="game/maps/facility" class="nav-button">
+                        <img src="" alt="Facility map">
+                        <span class="wiki-button-text">FLOORS</span>
+                    </a>
+                    </div>
 
-    <section class="section">
-        <h2 class="section-title">О игре</h2>
-        <p>Lobotomy Corporation - это уникальная игра, сочетающая в себе элементы управления ресурсами, стратегии и хоррора. Вам предстоит управлять секретной организацией, изучающей и содержащей аномальные существа. Сможете ли вы справиться с ужасами, таящимися в недрах вашей корпорации, или станете их жертвой?</p>
-    </section>
+                    <div class="wiki-button">
+                    <a href="game/maps/city" class="nav-button">
+                        <img src="" alt="City map">
+                        <span class="wiki-button-text">CITY</span>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="game-info">
+            <div class="cage-container">
+                <h2>ABOUT THE GAME</h2>
+                <li>Immerse yourself in the twisted, mind-bending world of "Library of Roblox" - a dark fantasy, turn-based card game inspired by the cult classic, Library of Ruina.</li>
+                <p>Step into the shoes of a ruthless Librarian tasked with hunting down guests who dare to defy the sacred rules of the Library.</p>
+               
+                <li>Strategically create card deck from powerful Books you've turned other Librarians into. Each has unique abilities that blur the line between reality and fantasy.</li>
+                <p>Create devastating combos and synergies to outwit and overpower your opponents in intense intellectual battles.</p>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>© 2023 Lobotomy Corporation. Все права защищены.</p>
-        <div class="footer-links">
-            <a href="https://www.roblox.com/games/lobotomy-corporation" class="footer-link">
-                <img src="roblox-icon.svg" alt="Roblox icon">
-                Играть на Roblox
-            </a>
-            <a href="https://discord.gg/lobotomy-corp" class="footer-link">
-                <img src="discord-icon.svg" alt="Discord icon">
-                Присоединиться к Discord
-            </a>
-            <a href="https://github.com/lobotomy-corp" class="footer-link">
-                <img src="github-icon.svg" alt="GitHub icon">
-                Исходный код на GitHub
-            </a>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="https://www.roblox.com/games/17397430990"><img src="" alt="Roblox icon">Roblox</a>
+                <a href="https://discord.gg/placeholder"><img src="" alt="Discord icon">Discord</a>
+                <a href="https://github.com/DomDotDot/LibraryOfRobloxia"><img src="" alt="GitHub icon">Github</a>
+            </div>
+            <p>©2024 Library of Ruina. All rights reserved.</p>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src=js/script.js></script>
 </body>
 </html>
